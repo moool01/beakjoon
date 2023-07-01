@@ -1,4 +1,6 @@
-a = int(input())
+import sys
+
+a = int(sys.stdin.readline())
 if a >= 90:
     print('A')
 elif a >= 80:
