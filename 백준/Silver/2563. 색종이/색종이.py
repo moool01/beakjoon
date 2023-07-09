@@ -1,6 +1,6 @@
 N = int(input())
 total = 0
-A = [[0 for _ in range(101)]for _ in range(101)]
+A = [[0 for _ in range(100)]for _ in range(100)]
 
 for i in range(N):
     a,b= map(int,input().split())
