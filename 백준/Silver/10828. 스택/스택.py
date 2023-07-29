@@ -1,30 +1,29 @@
 import sys
 
 N =int(input())
-list=[]
+stack=[]
 for _ in range(N):
     a = sys.stdin.readline().split()
 
     if a[0] == 'push':
-        list.append(a[1])
+        stack.append(a[1])
 
     elif a[0] == 'pop':
-        if len(list) == 0:
+        if len(stack) == 0:
             print(-1)
         else:
-            print(list.pop())
+            print(stack.pop())
 
     elif a[0] == 'size':
-        print(len(list))
+        print(len(stack))
 
     elif a[0] == 'empty':
-        if len(list) == 0:
+        if len(stack) == 0:
             print(1)
         else:
             print(0)
-
     elif a[0] == 'top':
-        if len(list) == 0:
+        if len(stack) == 0:
             print(-1)
         else:
-            print(list[-1])
+            print(stack[-1])
