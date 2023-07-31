@@ -1,7 +1,8 @@
-a = int(input())
+import sys
+a = int(sys.stdin.readline())
 
 for _ in range(a):
-    b = input()
+    b = sys.stdin.readline()
     s = list(b)
     score = 0
     c = 0
