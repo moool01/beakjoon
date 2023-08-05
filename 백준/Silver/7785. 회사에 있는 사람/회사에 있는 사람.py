@@ -1,8 +1,9 @@
-n = int(input())
+import sys
+n = int(sys.stdin.readline())
 temp = dict() # 딕셔너리 형
 
 for _ in range(n):
-    a, b = map(str, input().split())
+    a, b = map(str, sys.stdin.readline().split())
 
     if b == "enter":
         temp[a] = b
